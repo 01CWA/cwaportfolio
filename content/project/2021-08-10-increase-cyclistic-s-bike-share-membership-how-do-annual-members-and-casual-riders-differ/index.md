@@ -32,7 +32,7 @@ tags:
 
   - Cyclistic, the fictional company used for this analysis is on based on the Divvy case study ["Sophisticated, Clear, and Polished’: Divvy and Data Visualization" written by Kevin Hartman](https://artscience.blog/home/divvy-dataviz-case-study). A detailed R script was provided by him which I used with modifications.
 
-  - After doing initial data familiarization and analysis in Excel using the most recent 12 months of historical data based on the [comprehensive case study instructions provided by Google](https://www.coursera.org/learn/google-data-analytics-capstone?specialization=google-data-analytics), (which included preliminary data organization, data cleaning and transformation, and data summarization with pivot tables using the mean of ride_length, max of ride_length, and the mode of day_of_week), I chose to continue my [final analysis and data visualizations in R](https://clever-poitras-02da34.netlify.app/about/). Please see this [changelog](/Users/caroladdassi/RProjects/cwaportfolio/content/talk/2021-08-10-changelog-for-cylistics-project/_index.md) for specific details.
+  - After doing initial data familiarization and analysis in Excel using the most recent 12 months of historical data based on the [comprehensive case study instructions provided by Google](https://www.coursera.org/learn/google-data-analytics-capstone?specialization=google-data-analytics), (which included preliminary data organization, data cleaning and transformation, and data summarization with pivot tables using the mean of ride_length, max of ride_length, and the mode of day_of_week), I chose to continue my [final analysis and data visualizations in R](https://clever-poitras-02da34.netlify.app/about/). Please see this [changelog](/Users/caroladdassi/RProjects/cwaportfolio/content/talk/2021-08-10-changelog-for-cylistics-project/_index.md) for additional details.
 
 **Data sources**:
 
@@ -57,3 +57,9 @@ tags:
 
 
 
+ how you verified its integrity.
+should include a list of the tools you used and why you selected them. In addition, it was an opportunity to explain how you ensured your data’s integrity and confirmed that it was clean and ready to analyze. Take a moment to review your documentation now. How can you improve it in order to describe your cleaning and manipulation techniques even more thoroughly
+
+In the analyze phase of your analysis, you wrote a summary of your analysis. According to the Case Study Roadmap, this summary should discuss organizing and formatting your data. In addition, it should detail any surprises, trends, or relationships you discovered. Lastly, you should summarize how these insights helped you answer your questions. Take a moment to review your summary now. How can you improve it in order to highlight your analysis process in a more compelling way?
+
+recommendations based on the final conclusion from your analysis. You were also asked what additional data you could analyze to enhance your work. Take a moment to consider this question again now. Respond with at least two ideas that you did not include in your original report.

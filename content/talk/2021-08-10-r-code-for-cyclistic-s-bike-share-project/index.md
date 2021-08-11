@@ -411,7 +411,7 @@ all_trips_v3 %>%
 #=================================================
 ### Step 5: Export Summary File for Further Analysis
 #=================================================
-### Create a csv file that we will visualize in Excel or Tableau
+### Create a csv file that we can visualize in Excel or Tableau
 
 To export the data as a csv file you can read [more here](https://datatofish.com/export-dataframe-to-csv-in-r/). 
 
@@ -444,7 +444,7 @@ write.csv(all_trips_v3,'/Users/caroladdassi/RProjects/Case_Study_Cyclistics/data
   theme(axis.text.y = element_text(size = 6))
 
 ### Visualization for average duration modified
-all_trips_v3 %>% 
+- all_trips_v3 %>% 
   mutate(weekday = wday(start_time, label = TRUE)) %>% 
   group_by(usertype, weekday) %>% 
   summarise(number_of_rides = n()
@@ -459,7 +459,7 @@ all_trips_v3 %>%
   ylab("Averge Ride Duration in Seconds")
 
 ### Visualization of the number of rides by rider type modified
-all_trips_v3 %>% 
+- all_trips_v3 %>% 
   mutate(weekday = wday(start_time, label = TRUE)) %>%
   group_by(usertype, weekday) %>%
   summarise(number_of_rides = n()) %>%

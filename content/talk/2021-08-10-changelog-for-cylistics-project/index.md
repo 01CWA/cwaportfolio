@@ -93,7 +93,7 @@ tags:
   
   - Deleted rides where tripduration shows up as negative in the ride_length_r fields and created a new version of the dataframe (v3) since data is being removed.
   
-  - Created a summary .csv file that to visualize in Excel or Tableau.
+  - Created a summary .csv file.
   
   - Created a .csv of the entire dataframe for archiving.
   
