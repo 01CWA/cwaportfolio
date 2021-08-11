@@ -45,3 +45,15 @@ tags:
   - Specifically for this capstone project, finding [KaptainTech's video](https://youtu.be/cpUVV8q7WNo) which shows how to measure distance in Excel using longitude and latitude coordinates was immensely helpful. (The distance is measured between points, not driving directions. Even so, it provided context for comparing miles traveled between casual riders and annual members.)
 
 ### So, how do annual members and casual riders use Cyclistic bikes differently?
+
+
+![](images/roundtrip6.png)
+
+
+![](images/avgduration.png)
+
+
+![](images/numrides.png)
+
+
+
