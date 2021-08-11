@@ -3,8 +3,8 @@
 text_align_right: false
 show_title_as_headline: false
 headline: |
-  Hi, my name is Emily Cooper. Nice to meet you.
+  Hi, my name is Carol Addassi. Nice to meet you.
 ---
 
 <!-- this is a subheadline -->
-I'm a driven 20-something American from Chicago who moved to Paris for an unexpected job opportunity. I've been tasked with bringing an American point of view to a venerable French marketing firm. :fr:
+Thank you (in advance) for viewing! Although it's about asking effective questions to make unbiased data-driven decisions while addressing stakeholders' needs, learning how to use the tools is pretty gratifying.

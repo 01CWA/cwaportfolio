@@ -1,8 +1,8 @@
 baseURL = "/"
 theme = "hugo-apero"
 languageCode = "en"
-title = "Personal website of Emily Cooper"
-author = "Emily Cooper"
+title = "Portfolio website of Carol Addassi"
+author = "Carol Addassi"
 copyright = "" # set to override the auto generated copyright using org info and now year
 googleAnalytics = ""
 disqusShortname = ""
@@ -28,9 +28,9 @@ enableEmoji = true
     style = "github"
     
 [params]
-  orgName = "RStudio"
-  orgLocal = "Anywhere"
-  description = "A modern, beautiful, and easily configurable blog theme for Hugo."
+  orgName = "Carol Whaley Addassi"
+  orgLocal = "New York"
+  description = "Data anlytics portfolio for Carol Whaley Addassi."
   favicon = "/img/favicon.ico"
   logo = "/img/blogophonic-mark-dark.png"
   mainSections = ["blog", "project", "talk"]
@@ -43,12 +43,12 @@ enableEmoji = true
   # Place image file in `static` folder and specify image name here.
   sharing_image = "/img/papillons.jpg"
   # Twitter username (without @). Used when a visitor shares your site on Twitter.
-  twitter = "apreshill"
+  twitter = "caroladdssi"
   
   # use a built-in color theme
   # one of: forest / grayscale / peach / plum /
   #         poppy / sky / violet / water 
-  theme = "violet"
+  theme = "forest"
   
   # or, leave theme empty & make your own palette
   # see docs at https://hugo-apero.netlify.app/blog/color-themes/
@@ -62,7 +62,7 @@ enableEmoji = true
   # sans-serif options: Commissioner / Alegreya Sans / Metropolis
   # if you import your own fonts, name them here too
   customtextFontFamily = "Commissioner"
-  customheadingFontFamily = "Fraunces"
+  customheadingFontFamily = "Alegreya Sans"
   # alternatively, leave empty and select basic font options: sans-serif or serif
   # for more http://tachyons.io/docs/typography/font-family/
   textFontFamily = "sans-serif"
@@ -74,25 +74,29 @@ enableEmoji = true
   # Icon pack "fas" includes solid icons, see: https://fontawesome.com/icons?d=gallery&s=solid&m=free
   # Icon pack "far" includes regular icons, see: https://fontawesome.com/icons?d=gallery&s=regular&m=free
   [[params.social]]
-      icon      = "github" # icon name without the 'fa-'
+      icon      = "linkedin" # icon name without the 'fa-'
       icon_pack = "fab"
-      url       = "https://github.com/apreshill/apero"
-  [[params.social]]
-      icon      = "facebook-square" # icon name without the 'fa-'
-      icon_pack = "fab"
-      url       = "https://www.facebook.com/hashtag/ap%C3%A9ro"
+      url       = "https://www.linkedin.com/in/carolwhaleyaddassi"
   [[params.social]]
       icon      = "instagram" # icon name without the 'fa-'
       icon_pack = "fab"
-      url       = "https://www.instagram.com/explore/tags/apero/"
+      url       = "https://www.instagram.com/caroladdassi"
   [[params.social]]
-      icon      = "twitter" # icon name without the 'fa-'
+      icon      = "github" # icon name without the 'fa-'
       icon_pack = "fab"
-      url       = "https://twitter.com/hashtag/apéro"
+      url       = "https://github.com/01CWA"
+  # [[params.social]]
+      # icon      = "facebook-square" # icon name without the 'fa-'
+      # icon_pack = "fab"
+      # url       = "https://www.facebook.com/hashtag/ap%C3%A9ro"
+  # [[params.social]]
+     # icon      = "twitter" # icon name without the 'fa-'
+     # icon_pack = "fab"
+     # url       = "https://twitter.com/hashtag/caroladdassi"
   [[params.social]]
-      icon      = "rss" # icon name without the 'fa-'
-      icon_pack = "fas"
-      url       = "/blog/index.xml"
+     # icon      = "rss" # icon name without the 'fa-'
+     # icon_pack = "fas"
+     # url       = "/blog/index.xml"
 
 [taxonomies]
   category = "categories"
@@ -102,11 +106,11 @@ enableEmoji = true
 [menu]
   [[menu.header]]
     name = "About"
-    title = "About Blogophonic"
+    title = "About Carol Addassi"
     url = "/about/"
     weight = 1
   [[menu.header]]
-    name = "Blog"
+    name = "Notes"
     title = "Blog"
     url = "/blog/"
     weight = 2
@@ -116,7 +120,7 @@ enableEmoji = true
     url = "/project/"
     weight = 3
   [[menu.header]]
-    name = "Talks"
+    name = "Other"
     title = "Talks"
     url = "/talk/"
     weight = 4

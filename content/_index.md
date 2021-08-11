@@ -1,12 +1,12 @@
 ---
-title: "Emily Cooper"
-subtitle: "Social media strategy @ Savoir"
-description: "Not all themes are created equal. With Blogophonic we set out to create a clean theme with the right features for a serious blog. We also wanted Blogophonic to be a pleasure to modify, so we built it with Tachyons, CSS Grid and packed it full of configurable options."
+title: "Carol Addassi"
+subtitle: "Data analyst finding the story"
+description: "Welcome! Portfolio pieces and notes about the amazing world of data exploration are inside.  Although my background is in photography, becoming a data analyst has so far been incredibly fun as I pivot careers from photo editing in news organizations."
 date: 2019-02-18T12:27:33-06:00
 images:
-  - img/revoir.jpg
-image_left: true
-text_align_left: false
+  - img/DAP_LincolnCenter.jpg
+image_left: false
+text_align_left: true
 show_social_links: true # specify social accounts in site config
 show_action_link: true
 action_link: /about

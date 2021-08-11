@@ -5,8 +5,8 @@ number_featured: 1 # pulling from mainSections in config.toml
 number_categories: 3 # set to zero to exclude
 show_intro: true
 intro: |
-  Cultures clash as I adjust to the challenges of life in Paris while juggling my career, new friendships, and love life. Here is how to catch up with me lately!
-show_outro: true
+  I'm applying for Junior Data Analyst positions while I continue expanding my knowledge and skills.
+show_outro: false
 outro: |
   <i class="fas fa-mug-hot pr2"></i>If my blog has helped you, you can [buy me a coffee](https://ko-fi.com/)!
 ---
