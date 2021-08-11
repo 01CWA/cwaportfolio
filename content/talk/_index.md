@@ -1,8 +1,8 @@
 ---
-title: Talks that Last
+title: Other
 description: |
-  This is a list for your talks, workshops, or other events with a time, date, and place.
-author: "The R Markdown Team @RStudio"
+  This is a home for pages linked from projects and notes.
+author: "Carol Addassi"
 show_post_thumbnail: true
 show_author_byline: true
 show_post_date: true
