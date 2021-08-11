@@ -5,8 +5,8 @@ description: |
 author: "Carol Addassi"
 show_post_thumbnail: true
 show_author_byline: true
-show_post_date: true
-show_post_time: true
+show_post_date: false
+show_post_time: false
 # for listing page layout
 layout: list # list, list-sidebar
 
@@ -29,8 +29,8 @@ sidebar:
 cascade:
   author: "The R Markdown Team @RStudio"
   show_author_byline: true
-  show_post_date: true
-  show_post_time: true
+  show_post_date: false
+  show_post_time: false
   show_disqus_comments: false # see disqusShortname in site config
   # for single-sidebar layout
   sidebar:
