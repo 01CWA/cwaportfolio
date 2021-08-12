@@ -47,15 +47,23 @@ tags:
 ### So, how do annual members and casual riders use Cyclistic bikes differently?
 
 
+![](images/totexcunkown.png)
+
+
+![](images/totalincunknown.png)!
+
+
+![](images/totmonth.png)
+
+
 ![](images/avgduration.png)
 
-![](images/totridersexcldays.png)
-
-![](images/totridrinc.png)
 
 ![](images/mostpopstfinomit.png)
 
+
 ![](images/mostpopallfin.png)
+
 
 ![](images/rtrides081221.png)
 

@@ -490,7 +490,7 @@ write.csv(all_trips_v3,'/Users/caroladdassi/RProjects/Case_Study_Cyclistics/data
 ### Visualization of the number of rides by rider type exluding unknown users
 - all_trips_v3 %>% 
   na_if("") %>% na.omit %>% 
-  # mutate(weekday = wday(start_time, label = TRUE)) %>% 
+  mutate(weekday = wday(start_time, label = TRUE)) %>% 
   group_by(usertype, day_of_week) %>% 
   summarise(number_of_rides = n()) %>% 
   arrange(usertype, day_of_week)  %>% 
