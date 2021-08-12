@@ -426,8 +426,8 @@ write.csv(all_trips_v3,'/Users/caroladdassi/RProjects/Case_Study_Cyclistics/data
   ylab("Start / End Station") +
   theme(axis.text.y = element_text(size = 6))
 
-### Visualization of the most popular start stations to begin rides (over 10,000 rides/year), unknown start stations left in.
-all_trips_v2 %>% 
+### Visualization of the most popular start stations to begin rides (over 10,000 rides/year), including unknown start stations.
+all_trips_v3 %>% 
   group_by(usertype, from_station_name) %>% 
   summarise(number_of_rides = n()) %>% 	
   filter(number_of_rides > 10000) %>% 
@@ -442,8 +442,8 @@ all_trips_v2 %>%
   coord_flip() +
   theme(axis.text.y = element_text(size = 6))
 
-### Visualization of the most popular start stations to begin rides (over 10,000 rides/year), blank stations ommitted.
-all_trips_v2 %>% 
+### Visualization of the most popular start stations to begin rides (over 10,000 rides/year), unknown stations ommitted.
+all_trips_v3 %>% 
    na_if("") %>% na.omit %>% 
   group_by(usertype, from_station_name) %>% 
   summarise(number_of_rides = n()) %>% 	
@@ -459,8 +459,8 @@ all_trips_v2 %>%
   coord_flip() +
   theme(axis.text.y = element_text(size = 6))
 
-### Visualization of the number of rides by rider type modified including blank days
-- all_trips_v3 %>% 
+### Visualization of the number of rides by rider type including unknown users
+all_trips_v3 %>% 
   mutate(weekday = wday(start_time, label = TRUE)) %>%
   group_by(usertype, weekday) %>%
   summarise(number_of_rides = n()) %>%
@@ -472,9 +472,23 @@ all_trips_v2 %>%
        subtitle = "Total Rides from July 2020 - June 2021 per Day, Chicago, \nIncluding Blank Days", 
        caption = "Public data has been made available by Motivate International Inc.") +
   xlab("Day of Week")
+  
+### Visualization of the number of rides by rider type including unknown users by month
+all_trips_v3 %>% 
+  group_by(month, usertype) %>%
+  summarise(number_of_rides = n()) %>%
+  arrange(usertype, month)  %>%
+  ggplot(aes(x = month, y = number_of_rides, fill = usertype)) +
+  geom_col(position = "dodge")+
+#  facet_wrap(~usertype)+
+  scale_y_continuous(name="Number of Rides", labels = scales::comma) +
+  labs(title= "Number of Rides by Type of Rider: Member or Casual", 
+       subtitle = "Total Rides from July 2020 - June 2021 per Month, Chicago, \nIncluding Unknown Users", 
+       caption = "Public data has been made available by Motivate International Inc.") +
+  xlab("Month")
 
-### Visualization of the number of rides by rider type modified exluding blank days
-all_trips_v2 %>% 
+### Visualization of the number of rides by rider type exluding unknown users
+all_trips_v3 %>% 
   na_if("") %>% na.omit %>% 
   # mutate(weekday = wday(start_time, label = TRUE)) %>% 
   group_by(usertype, day_of_week) %>% 
@@ -484,12 +498,13 @@ all_trips_v2 %>%
   geom_col(position = "dodge")+
   scale_y_continuous(name="Number of Rides", labels = scales::comma) +
   labs(title= "Number of Rides by Type of Rider: Member or Casual", 
-       subtitle = "Total Rides from July 2020 - June 2021 per Day, Chicago, \nExcluding Blank Days", 
+       subtitle = "Total Rides from July 2020 - June 2021 per Day, Chicago, \nExcluding Unknown Users", 
        caption = "Public data has been made available by Motivate International Inc.") +
-  xlab("Day of Week")
+  xlab("Day of Week")+
+  ylab("Number of Rides")
 
-### Visualization for average duration modified
-- all_trips_v3 %>% 
+### Visualization for average duration including unknown users
+all_trips_v3 %>% 
   mutate(weekday = wday(start_time, label = TRUE)) %>% 
   group_by(usertype, weekday) %>% 
   summarise(number_of_rides = n()
