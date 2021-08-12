@@ -46,26 +46,44 @@ tags:
 
 ### So, how do annual members and casual riders use Cyclistic bikes differently?
 
+>*Based on the available data, there is higher ridership of casual riders on Saturday and Sunday, while members outpace casuals on weekdays from July 2020 through June 2021.*
 
 ![](images/totexcunkown.png)
 
+>*However, the data has an almost equal amount of unknown types of riders (1,344,783) as there are casual riders (1,364,323), while members (1,741,173 riders) make up the difference for a total of 4,458,406, after deleting 9,872 records with negative ride length. Knowing what types of riders these are could make a big difference in future marketing plans.*
 
-![](images/totalincunknown.png)!
+![](images/totalincunknown.png)
 
+>*As may be expected, the hotter months, July and August, show higher ridership of all users with members being slightly higher. From July until December as the total number of rides declines, casual riders show progressively less ridership than members, a trend that is seen in January through April as ridership increases as the weather gets warmer.*
 
 ![](images/totmonth.png)
 
+>*Casual riders’ average ride-time is significantly longer every day of the week for the 12 months.*
 
 ![](images/avgduration.png)
 
+>*Casual riders frequent the two most popular stations to begin rides, Streeter Drive & Grand Ave. and Lake Shore Drive & Monroe St. It’s fairly even for the rest of the most popular start stations between the two types of riders (as defined in this graph as over 10,000 rides per year beginning at the station.)*
 
 ![](images/mostpopstfinomit.png)
 
+>*Again we see there are many unknowns as far as what stations are most popular for the entire pool of riders.*
 
 ![](images/mostpopallfin.png)
 
+>*Casual riders by far take the most roundtrip rides, defined as the distance traveled as zero with a non-zero ride length. Lake Shore Drive & Monroe St. stands out from the rest of the stations in this regard. Other stations near Lake Shore Dr., like Michigan Ave. & Lake St. and Michigan Ave. & Oak St., or tourist destinations near there, Millennium Park and Buckingham Fountain for example, also rank high for roundtrip usage.*
 
 ![](images/rtrides081221.png)
 
+Recommendations: 
+
+- Investigate ways to increase data completeness, especially with usertype, beginning, and ending stations. How is the data captured? Are there ways to do it that avoid manual input, if that is currently an aspect of how it’s captured?
+
+- Casual riders by far outweigh members with the number of roundtrip rides taken. Connecting roundtrip ridership with the benefits of membership could be very helpful.
+
+- Include in a marketing plan appeals to casual riders to ride more on weekdays. For example, weekday discounts for casual riders that are cheaper than what they’re paying now, (but not as beneficial as memberships) could be an enticement.
+
+- Lake Shore Dr. & Monroe St. station appears to be popular in multiple ways. Targeting casual riders at that station with membership enticements could be an effective way to reach many casual riders in one place. Streeter Dr. & Grand Ave. is also quite popular with casual riders which would make it an effective location to reach them.
+
+- Members overall take more rides on all days except weekend days and lead in the number of rides in all months except April, May, and June, which are close for both types of riders. Casual riders' average ride time is significantly more than members' average ride time. Based on the specs for the case study, members are more profitable than casual riders. Knowing the membership price, cost of individual rides, and the information as to what makes members more profitable since they use the service more than casual riders do, would be helpful in further understanding how these two types of riders differ.
 
 

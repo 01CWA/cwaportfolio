@@ -513,8 +513,8 @@ write.csv(all_trips_v3,'/Users/caroladdassi/RProjects/Case_Study_Cyclistics/data
   ggplot(aes(x = weekday, y = average_duration, fill = usertype)) +
   geom_col(position = "dodge") +
   labs(title= "Average Ride Length by Type of Rider: Member or Casual", 
-       subtitle = "July 2020 - June 2021 by Day of Week in Hours, Chicago", 
+       subtitle = "July 2020 - June 2021 by Day of Week in Seconds, Chicago", 
        caption = "Public data has been made available by Motivate International Inc.") +
   xlab("Day of Week") +
-  ylab("Averge Ride Duration in Hours")
+  ylab("Average Ride Duration in Seconds")
   
