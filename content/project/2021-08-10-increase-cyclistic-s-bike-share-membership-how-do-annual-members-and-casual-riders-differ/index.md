@@ -54,7 +54,7 @@ tags:
 
 ![](images/totalincunknown.png)
 
->*As may be expected, the hotter months, July and August, show higher ridership of all users with members being slightly higher. From July until December as the total number of rides declines, casual riders show progressively less ridership than members, a trend that is seen in January through April as ridership increases as the weather gets warmer.*
+>*As may be expected, the hotter months, July and August, show higher ridership of all users with members being slightly higher. From July until December as the total number of rides declines, casual riders show progressively less ridership than members, a trend that is mirrored in January through April when overall ridership increases as the weather gets warmer, with casual riders continuing to lag behind members in total rides.*
 
 ![](images/totmonth.png)
 
@@ -62,7 +62,7 @@ tags:
 
 ![](images/avgduration.png)
 
->*Casual riders frequent the two most popular stations to begin rides, Streeter Drive & Grand Ave. and Lake Shore Drive & Monroe St. It’s fairly even for the rest of the most popular start stations between the two types of riders (as defined in this graph as over 10,000 rides per year beginning at the station.)*
+>*Casual riders dominate starting their rides at the two most popular stations to begin rides, Streeter Drive & Grand Ave. and Lake Shore Drive & Monroe St. It’s fairly even for the rest of the most popular start stations between the two types of riders (as defined in this graph as over 10,000 rides per year beginning at the station.)*
 
 ![](images/mostpopstfinomit.png)
 
@@ -82,7 +82,7 @@ Recommendations:
 
 - Include in a marketing plan appeals to casual riders to ride more on weekdays. For example, weekday discounts for casual riders that are cheaper than what they’re paying now, (but not as beneficial as memberships) could be an enticement.
 
-- Lake Shore Dr. & Monroe St. station appears to be popular in multiple ways. Targeting casual riders at that station with membership enticements could be an effective way to reach many casual riders in one place. Streeter Dr. & Grand Ave. is also quite popular with casual riders which would make it an effective location to reach them.
+- Lake Shore Dr. & Monroe St. station appears to be popular in multiple ways with all riders and especially casual riders. Targeting casual riders at that station with membership enticements could be an effective way to reach many casual riders in one place. Streeter Dr. & Grand Ave. is also quite popular with casual riders which would make it a prime location to reach them.
 
 - Members overall take more rides on all days except weekend days and lead in the number of rides in all months except April, May, and June, which are close for both types of riders. Casual riders' average ride time is significantly more than members' average ride time. Based on the specs for the case study, members are more profitable than casual riders. Knowing the membership price, cost of individual rides, and the information as to what makes members more profitable since they use the service more than casual riders do, would be helpful in further understanding how these two types of riders differ.
 
