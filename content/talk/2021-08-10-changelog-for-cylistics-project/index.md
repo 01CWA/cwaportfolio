@@ -91,7 +91,9 @@ tags:
   
   - Deleted rides where tripduration shows up as negative in the remainder of the ride_length fields and created a new version of the dataframe (v2) since data is being removed. 
   
-  - Deleted rides where tripduration shows up as negative in the ride_length_r fields and created a new version of the dataframe (v3) since data is being removed.
+  - Deleted rides where tripduration shows up as negative in the ride_length_r fields and created a new version of the dataframe (v3) since data is being removed. 8,127 rows were deleted.
+  
+![](images/ObsAftDelU.png)
   
   - Created a summary .csv file.
   

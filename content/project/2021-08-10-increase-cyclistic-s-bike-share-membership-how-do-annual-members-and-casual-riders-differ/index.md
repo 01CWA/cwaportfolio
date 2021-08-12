@@ -47,19 +47,17 @@ tags:
 ### So, how do annual members and casual riders use Cyclistic bikes differently?
 
 
-![](images/roundtrip6.png)
-
+![](images/totridersexcldays.png)
 
 ![](images/avgduration.png)
 
+![](images/totridrinc.png)
 
-![](images/numrides.png)
+![](images/mostpopstfinomit.png)
+
+![](images/mostpopallfin.png)
+
+![](images/rtrides081221.png)
 
 
 
- how you verified its integrity.
-should include a list of the tools you used and why you selected them. In addition, it was an opportunity to explain how you ensured your data’s integrity and confirmed that it was clean and ready to analyze. Take a moment to review your documentation now. How can you improve it in order to describe your cleaning and manipulation techniques even more thoroughly
-
-In the analyze phase of your analysis, you wrote a summary of your analysis. According to the Case Study Roadmap, this summary should discuss organizing and formatting your data. In addition, it should detail any surprises, trends, or relationships you discovered. Lastly, you should summarize how these insights helped you answer your questions. Take a moment to review your summary now. How can you improve it in order to highlight your analysis process in a more compelling way?
-
-recommendations based on the final conclusion from your analysis. You were also asked what additional data you could analyze to enhance your work. Take a moment to consider this question again now. Respond with at least two ideas that you did not include in your original report.
