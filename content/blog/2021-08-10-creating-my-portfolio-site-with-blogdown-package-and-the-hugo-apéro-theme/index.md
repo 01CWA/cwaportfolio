@@ -1,6 +1,7 @@
 ---
 title: Creating my portfolio site with R package blogdown and Hugo Apéro theme
 author: Carol Addassi
+excerpt: "This is a shout-out to the wonderful R community."
 date: '2021-08-10'
 slug: []
 categories:
