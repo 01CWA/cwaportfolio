@@ -1,5 +1,7 @@
 ---
 title: Changelog for Cyclistic's Bike-Share Project
+subtitle: " "
+excerpt: "This is my record for changes to the data during the project."
 author: Carol Addassi
 date: '2021-08-10'
 slug: []
