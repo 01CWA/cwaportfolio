@@ -38,7 +38,7 @@ tags:
 
 **Data sources**:
 
-  Although Cyclistic is a fictional company, the [public data](https://divvy-tripdata.s3.amazonaws.com/index.html) used has been made available by Motivate International Inc. under this [license](https://www.divvybikes.com/data-license-agreement). Divvy is a bike-share program of the Chicago Department of Transportation (CDOT).  Please note that data-privacy issues prohibit usage of riders’ personally identifiable information. This means that past purchases may not be connected to credit card numbers to determine if casual riders live in the bike-share company's service area or if they have purchased multiple single passes.
+  Although Cyclistic is a fictional company, the [public data](https://divvy-tripdata.s3.amazonaws.com/index.html) used has been made available by Motivate International Inc. under this [license](https://www.divvybikes.com/data-license-agreement). Divvy is a bike-share program of the Chicago Department of Transportation (CDOT).
 
 **Additional credits**:
 
