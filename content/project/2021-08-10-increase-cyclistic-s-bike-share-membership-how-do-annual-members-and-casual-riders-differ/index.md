@@ -3,7 +3,7 @@ title: 'Increase Cyclistic''s Bike-Share Membership: How do annual members and c
   riders differ?'
 subtitle: " "
 author: Carol Addassi
-excerpt: "This is my capstone project for the Google Analytics Professional Certificate."
+excerpt: "This is my capstone project for the Google Data Analytics Professional Certificate."
 date: '2021-08-10'
 slug: []
 categories: []
