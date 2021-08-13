@@ -30,7 +30,7 @@ tags:
 
 **About this case study**:
 
-  - This is my capstone project for my [Google Analytics Professional Certificate](https://coursera.org/share/ca837b41716199898aa3b07a048cff41) and first portfolio piece for my job search. 
+  - This is my capstone project for my [Google Analytics Professional Certificate](https://coursera.org/share/d1f6e9623db09495c8ea7c90cb592379) and first portfolio piece for my job search. 
 
   - Cyclistic, the fictional company used for this analysis is on based on the Divvy case study ["Sophisticated, Clear, and Polished’: Divvy and Data Visualization" written by Kevin Hartman](https://artscience.blog/home/divvy-dataviz-case-study). A detailed R script was provided by him which I used with modifications.
 
