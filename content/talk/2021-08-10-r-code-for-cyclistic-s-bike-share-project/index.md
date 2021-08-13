@@ -1,6 +1,8 @@
 ---
-title: R Code for Cyclistic's Bike-Share Project
+title: R Process for Cyclistic's Bike-Share Project
+subtitle: " "
 author: Carol Addassi
+excerpt: "These are the cleaning and analysis steps in R."
 date: '2021-08-10'
 slug: []
 categories: []
@@ -340,7 +342,7 @@ all_trips_v3 <- all_trips[!(all_trips$from_station_id == "HQ QR" | all_trips$rid
 
 ### You can condense the four lines above to one line using summary() on the specific attribute
 
-summary(all_trips_v2$ride_length_r, na.rm = TRUE)
+summary(all_trips_v3$ride_length_r, na.rm = TRUE)
 
 ### Compare members and casual users
 - aggregate(all_trips_v3$ride_length_r ~ all_trips_v3$usertype, FUN = mean)
@@ -469,7 +471,7 @@ write.csv(all_trips_v3,'/Users/caroladdassi/RProjects/Case_Study_Cyclistics/data
   geom_col(position = "dodge")+
   scale_y_continuous(name="Number of Rides", labels = scales::comma) +
   labs(title= "Number of Rides by Type of Rider: Member or Casual", 
-       subtitle = "Total Rides from July 2020 - June 2021 per Day, Chicago,    \nIncluding Blank Days", 
+       subtitle = "Total Rides from July 2020 - June 2021 per Day, Chicago,    \nIncluding Unknown Users", 
        caption = "Public data has been made available by Motivate International Inc.") +
   xlab("Day of Week")
   
@@ -480,7 +482,6 @@ write.csv(all_trips_v3,'/Users/caroladdassi/RProjects/Case_Study_Cyclistics/data
   arrange(usertype, month)  %>%
   ggplot(aes(x = month, y = number_of_rides, fill = usertype)) +
   geom_col(position = "dodge")+
-  facet_wrap(~usertype)+
   scale_y_continuous(name="Number of Rides", labels = scales::comma) +
   labs(title= "Number of Rides by Type of Rider: Member or Casual", 
        subtitle = "Total Rides from July 2020 - June 2021 per Month, Chicago, \nIncluding Unknown Users", 
