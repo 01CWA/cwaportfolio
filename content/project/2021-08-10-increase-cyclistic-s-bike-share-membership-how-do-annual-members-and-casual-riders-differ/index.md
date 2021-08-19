@@ -30,7 +30,7 @@ tags:
 
 **About this case study**:
 
-  - This is my capstone project for my [Google Analytics Professional Certificate](https://coursera.org/share/d1f6e9623db09495c8ea7c90cb592379) and first portfolio piece for my job search. 
+  - This is my capstone project for my [Google Data Analytics Professional Certificate](https://coursera.org/share/d1f6e9623db09495c8ea7c90cb592379) and first portfolio piece for my job search. 
 
   - Cyclistic, the fictional company used for this analysis is on based on the Divvy case study ["Sophisticated, Clear, and Polished’: Divvy and Data Visualization" written by Kevin Hartman](https://artscience.blog/home/divvy-dataviz-case-study). A detailed R script was provided by him which I used with modifications.
 
@@ -42,7 +42,7 @@ tags:
 
 **Additional credits**:
 
-  - Huge thank you's to Google and all of their wonderful instructors who created this super-beneficial program. Besides the incisive and engaging original content, they provided copious resources for deeper dives into all phases of the data analytics project life cycle.
+  - Thank you's to Google and all of their wonderful instructors who created this super-beneficial program. Besides the incisive and engaging original content, they provided copious resources for deeper dives into all phases of the data analytics project life cycle.
 
   - Specifically for this capstone project, finding [KaptainTech's video](https://youtu.be/cpUVV8q7WNo) which shows how to measure distance in Excel using longitude and latitude coordinates was immensely helpful. (The distance is measured between points, not driving directions. Even so, it provided context for comparing miles traveled between casual riders and annual members.)
 
