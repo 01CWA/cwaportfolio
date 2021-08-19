@@ -1,7 +1,7 @@
 ---
 title: Notes
 description: |
-  This is a place both for organized and random thoughts.
+  This is a place for both organized and random thoughts.
 author: "Carol Addassi"
 show_post_thumbnail: true
 show_author_byline: true
@@ -13,7 +13,7 @@ layout: list-sidebar # list, list-sidebar, list-grid
 sidebar: 
   title: Notes
   description: |
-    This is a place for organized and random thoughts.
+    This is a place for both organized and random thoughts.
     
      
   author: "Carol Addassi"
