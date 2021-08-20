@@ -1,7 +1,7 @@
 ---
 title: Notes
 description: |
-  This is a place for both organized and random thoughts.
+  This is a home for both organized and random thoughts.
 author: "Carol Addassi"
 show_post_thumbnail: true
 show_author_byline: true
