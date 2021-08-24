@@ -22,7 +22,7 @@ tags:
 
 **Why**:
 
-  Cyclistic’s finance analysts have concluded that annual members are much more profitable than casual riders. 
+  Cyclistic’s financial analysts have concluded that annual members are much more profitable than casual riders. 
 
 **How**:
 
