@@ -49,7 +49,7 @@ tags:
   
   - 2020_07 has started_at and ended_at columns with cell format of 37:30:55 and those same columns in the other 11 files were left as is. Where ended_at is less than started_at, the negative column data in ride_length appears as "##############" in 2020_07 and as negative numbers in the other 11 files where the column formats were not changed. I deleted the rows where ride length is negative here and left the ride_length fields with negative numbers in the other 11 files in them for deletion later in R. 1,745 rows were deleted in 2020_07 leaving the current total of rows excluding the header as **549,735**.
   
-  - Replaced all #NUM! errors in all files with zero where start_lat and start_lng were the same as end_lat and end_lng where customers began and ended their rides at the same station. The number on instances changed in each file are:
+  - Replaced all #NUM! errors in all files with zero where start_lat and start_lng were the same as end_lat and end_lng where customers began and ended their rides at the same station. The number of instances changed in each file are:
  
     - 2020_07: 744
     - 2020_08: 801
