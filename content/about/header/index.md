@@ -3,7 +3,7 @@
 text_align_right: false
 show_title_as_headline: false
 headline: |
-  Hi, I'm Carol Addassi. Nice to meet you.
+  Hi, I'm Carol Addassi.<br>Nice to meet you.
 ---
 
 <!-- this is a subheadline -->
