@@ -2,20 +2,21 @@
 title: 'Workflow Exercise: BigQuery in Kaggle to RStudio'
 author: "Carol Addassi"
 date: '2021-09-13'
-excerpt: Workflow exercise using Kaggle, BigQuery, and RStudio while exploring survey
+excerpt: This project's workflow uses Kaggle, BigQuery, and RStudio while exploring survey
   data of vacant storefronts in August 2020, on Broadway in New York City.
 subtitle: ' '
 slug: []
 categories: []
 tags:
-- capstone
+- kaggle
+- bigquery
 - case-study
 ---
 
-![bike-share bike rack](featured-hex.jpg)
+![times square broadway](featured-hex.jpg)
 
 ### Notebook Purpose
-**[Practice workflow using Kaggle, BigQuery, and RStudio](https://www.kaggle.com/caroladdassi/workflow-exercise-bigquery-in-kaggle-to-rstudio) while exploring survey data of vacant storefronts in August 2020, on Broadway in New York City.**
+**The motivation for this notebook is to practice a workflow using Kaggle, BigQuery, and RStudio while exploring survey data of vacant storefronts in August 2020 on Broadway in New York City.**
 
 For this exercise I'll use Kaggle's integration into BigQuery with Kaggle kernal language set to Python, and then download the .ipynb notebook file and convert to an R Markdown document in an R project containing my portfolio website using the Hugo Apéro theme with blogdown.
 
@@ -41,11 +42,12 @@ The data analysis steps include:
 The NYC Department of City Planning (DCP) is studying the Manhattan Borough President’s Office survey data of vacant storefronts in August 2020 on Broadway, from the Battery at the southern tip of Manhattan to Inwood, at the northern tip of Manhattan, highlighting business struggles in the Covid-19 pandemic. The specific **business task** here is to discover which community boards have the highest concentration of vacant storefronts overall and to delineate the vacancy reasons within zip codes.
 
 #### Data Sources Used
-For this project I uploaded a Non-Federal data.gov dataset ["MBPO Broadway Storefront Vacancy Survey 2020"](https://catalog.data.gov/dataset/mbpo-broadway-storefront-vacancy-survey-2020) in survey_2020_vacant_storefronts_bway table in vacant_storefronts_bway dataset in a project I created in BigQuery in Google Cloud Platform. This Non-Federal data.gov dataset is intended for public access and use covered under [these terms](https://www1.nyc.gov/home/terms-of-use.page).
+For this project I uploaded a Non-Federal data.gov dataset ["MBPO Broadway Storefront Vacancy Survey 2020"](https://catalog.data.gov/dataset/mbpo-broadway-storefront-vacancy-survey-2020) in survey_2020_vacant_storefronts_bway table in vacant_storefronts_bway dataset in a project I created in BigQuery in Google Cloud Platform. This Non-Federal data.gov dataset is intended for public access and use covered under [these terms](https://www1.nyc.gov/home/terms-of-use.page). (I also uploaded the file to this Kaggle notebook.)
 
 Please note, after much trial and error and online searching, I could not find a successful, **cost-free** way to create dataframes using public datasets available in bigquery-public-data, under my own account (not part of a Kaggle tutorial exercise). I decided for this notebook task to load a (smallish) public dataset (not located in the bigquery-public-data project) from data.gov into a BigQuery project I created so I would be able to create dataframes, tables, and export csv files as needed without any BigQuery fees.
 
 ```{python}
+
 # Import the Python package to use BigQuery - attach from "Google Cloud Services" in "Add-ons" dropdown
 from google.cloud import bigquery
 bigquery_client = bigquery.Client(project='all-in-one-platform')
@@ -70,11 +72,13 @@ table = client.get_table(table_ref)
 
 # Print information on all the columns in the "urvey_2020_vacant_storefronts_bway" dataset
 table.schema
+```
 
 ```{python}
 # Preview the first ten lines of the "survey_2020_vacant_storefronts_bway" table
 client.list_rows(table, max_results=10).to_dataframe()
 ```
+
 The columns I'm intersted in for this task are 'Business_Address', 'Business_Name', 'What_indicates_the_storefront_is_available_vacant_', 'Is_the_storefront_boarded_up_with_plywood_', 'East_or_West_side_of_the_street_', 'Latitude', 'Longitude', 'Community_Board', 'Council_District', 'Borough', and 'Postcode'.
 
 ```{python}
@@ -202,7 +206,6 @@ SELECT Business_Address, Business_Name, What_indicates_the_storefront_is_availab
 FROM   `all-in-one-platform.vacant_storefronts_bway.survey_2020_vacant_storefronts_clean`
 WHERE What_indicates_the_storefront_is_available_vacant_ IS NULL
                                 """
-
 # Set up the query (cancel the query if it would use too much of 
 # your quota.)
 safe_config = bigquery.QueryJobConfig(maximum_bytes_billed=10**10)
@@ -247,17 +250,35 @@ We can see zip codes 10025, 10024, 10031, 10012, and 10023 in community boards 1
 
 We'll use our new, cleaned table that we wrote to a csv file above (clean_table_result.csv in .../output/kaggle/working in Tableau and create three visualizations to see this in more detail.
 
-In the [first tab and below](https://public.tableau.com/views/StorefrontVacanciesonBroadwayinAugust2020/OverallMapView?:language=en-US&:display_count=n&:origin=viz_share_link) we have a map highlighting the overall concentration of storefront vacancies on Broadway in Manhattan in August 2020.]
+In the [first tab here we have a map highlighting the overall concentration of storefront vacancies on Broadway in Manhattan in August 2020.](https://public.tableau.com/views/StorefrontVacanciesonBroadwayinAugust2020/OverallMapView?:language=en-US&:display_count=n&:origin=viz_share_link)
 
-Next in the [second tab and below](https://public.tableau.com/views/StorefrontVacanciesonBroadwayinAugust2020/NumberofVacanciesbyCommunityBoardandZipCode?:language=en-US&:display_count=n&:origin=viz_share_link) we have a visualization of the number of vacant storefronts on Broadway in Manhattan per community board and zip code in August 2020.
+Next in the [second tab](https://public.tableau.com/views/StorefrontVacanciesonBroadwayinAugust2020/NumberofVacanciesbyCommunityBoardandZipCode?:language=en-US&:display_count=n&:origin=viz_share_link) (also shown below) we have a visualization of the number of vacant storefronts on Broadway in Manhattan per community board and zip code in August 2020.
 
 <div class='tableauPlaceholder' id='viz1631519540206' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;StorefrontVacanciesonBroadwayinAugust2020&#47;NumberofVacanciesbyCommunityBoardandZipCode&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='StorefrontVacanciesonBroadwayinAugust2020&#47;NumberofVacanciesbyCommunityBoardandZipCode' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;St&#47;StorefrontVacanciesonBroadwayinAugust2020&#47;NumberofVacanciesbyCommunityBoardandZipCode&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1631519540206');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
-And finally in the [third tab and above](https://public.tableau.com/app/profile/carol.addassi/viz/StorefrontVacanciesonBroadwayinAugust2020/NumberofVacantStorefrontsPerCommunityBoard) we have a view showing the number of storefront vacancies on Broadway in Manhattan per community board in August 2020.
+And finally in the [third tab we have a view showing the number of storefront vacancies on Broadway in Manhattan per community board in August 2020.](https://public.tableau.com/app/profile/carol.addassi/viz/StorefrontVacanciesonBroadwayinAugust2020/NumberofVacantStorefrontsPerCommunityBoard)
 
 While it's evident much of Broadway is experiencing large-scale shuttering of storefronts, from these graphics we can see there is an especially high concentration of issues in the Upper West Side and Harlem.
 
 Next steps could include conducting another survey, now a year later, to see if any mitigating factors such as government pandemic funds have or have not improved the vacancy rate of storefronts on Broadway. Cross-referencing crime statistics with this data and new survey data could provide additional motivation for designing a granular neighborhood plan to increase the vacancy rate.
 
-Thank you for viewing this exercise. Suggestions and comments are welcome for streamlining this workflow. 
+#### Loading This Notebook Into R
 
+The immediate endpoint of this particular notebook for me is creating this [portfolio piece](https://www.caroladdassi.com/project/2021-09-13-workflow-exercise-bigquery-in-kaggle-to-rstudio/) for my website using the Hugo Apéro theme with blogdown. I completed [Google Data Analytics Certificate](https://coursera.org/share/d1f6e9623db09495c8ea7c90cb592379) in August and am applying for positions.
+
+I'm continually amazed and grateful for all of the help available online — [Stack Overflow](https://stackoverflow.com/questions/55836849/google-bigquery-write-truncate-erasing-all-data), [Kaggle](https://www.kaggle.com/dimarudov/data-analysis-using-sql), [RStudio Community](https://db.rstudio.com/databases/big-query/), [random posts](https://www.biztory.com/blog/2019/07/22/null-values-tips) — [everywhere](https://www.youtube.com/watch?v=HXV3zeQKqGY). I was constantly searching for tips throughout this exercise. I'd like to give a special shoutout to [Han Oostdijk](https://community.rstudio.com/u/hanoostdijk/summary) for [posting](https://community.rstudio.com/t/convert-ipynb-not-in-namespace-of-rmarkdown-package/77002) how to get a Jupyter Notebook into an [RStudio project](https://www.caroladdassi.com).
+
+Steps to load this notebook into my R project:
+    
+   1. Download notebook from File/Download Notebook dropdown in Kaggle notebook.
+   
+   2. Make sure these packages are installed in R and then load them into my R project:
+         library(jsonlite)
+         library(xfun)
+         library(bigrquery)
+        
+   3. Run this line of code in my R project: nb_rmd = rmarkdown:::convert_ipynb("my_notebook_file.ipynb"). This creates a .Rmd markdown file.
+
+For my requirements for this exercise, I copied the contents into a .md file for a project post for my website.
+
+Thank you for viewing this exercise. Suggestions and comments are welcome for streamlining this workflow. 
