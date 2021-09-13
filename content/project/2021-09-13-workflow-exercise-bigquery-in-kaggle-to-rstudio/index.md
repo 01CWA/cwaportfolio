@@ -15,7 +15,7 @@ tags:
 ![bike-share bike rack](featured-hex.jpg)
 
 ### Notebook Purpose
-**Practice workflow using Kaggle, BigQuery, and RStudio while exploring survey data of vacant storefronts in August 2020 on Broadway in New York City.**
+**[Practice workflow using Kaggle, BigQuery, and RStudio](https://www.kaggle.com/caroladdassi/workflow-exercise-bigquery-in-kaggle-to-rstudio) while exploring survey data of vacant storefronts in August 2020 on Broadway in New York City.**
 
 For this exercise I'll use Kaggle's integration into BigQuery with Kaggle kernal language set to Python, and then download the .ipynb notebook file and convert to an R Markdown document in an R project containing my portfolio website using the Hugo Apéro theme with blogdown.
 
