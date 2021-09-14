@@ -70,7 +70,7 @@ table_ref = dataset_ref.table('survey_2020_vacant_storefronts_bway')
 # API request - fetch the table. This is the only table I uploaded in BigQuery .
 table = client.get_table(table_ref)
 
-# Print information on all the columns in the "urvey_2020_vacant_storefronts_bway" dataset
+# Print information on all the columns in the "survey_2020_vacant_storefronts_bway" dataset
 table.schema
 ```
 
