@@ -272,7 +272,7 @@ Steps to load this notebook into my R project:
     
    1. Download notebook from File/Download Notebook dropdown in Kaggle notebook.
    
-   2. Make sure these packages are installed in R and then load them into my R project:
+   2. Make sure these packages are installed in RStudio and then load them into my R project:
          library(jsonlite)
          library(xfun)
          library(bigrquery)
