@@ -79,7 +79,7 @@ table.schema
 client.list_rows(table, max_results=10).to_dataframe()
 ```
 
-The columns I'm intersted in for this task are 'Business_Address', 'Business_Name', 'What_indicates_the_storefront_is_available_vacant_', 'Is_the_storefront_boarded_up_with_plywood_', 'East_or_West_side_of_the_street_', 'Latitude', 'Longitude', 'Community_Board', 'Council_District', 'Borough', and 'Postcode'.
+The columns I'm intersted in for this task are 'Business_Address', 'Business_Name', 'What_indicates_the_storefront_is_available_vacant_', 'Is_the_storefront_boarded_up_with_plywood_', 'East_or_West_side_of_the_street_', 'Latitude', 'Longitude', 'Community_Board', 'Council_District', 'Borough', and 'Postcode'. The survey data is all from August 2020, and there are no date fields in the data. There are no numeric fields to perform calculations on, so no cleaning is required there.
 
 ```{python}
 # How many rows are in the table?
