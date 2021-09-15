@@ -73,13 +73,15 @@ table = client.get_table(table_ref)
 # Print information on all the columns in the "survey_2020_vacant_storefronts_bway" dataset
 table.schema
 ```
+![](Output_00001.png)
 
 ```{python}
 # Preview the first ten lines of the "survey_2020_vacant_storefronts_bway" table
 client.list_rows(table, max_results=10).to_dataframe()
 ```
+![](Output_00002.png)
 
-The columns I'm intersted in for this task are 'Business_Address', 'Business_Name', 'What_indicates_the_storefront_is_available_vacant_', 'Is_the_storefront_boarded_up_with_plywood_', 'East_or_West_side_of_the_street_', 'Latitude', 'Longitude', 'Community_Board', 'Council_District', 'Borough', and 'Postcode'. The survey data is all from August 2020, and there are no date fields in the data. There are no numeric fields to perform calculations on, so no cleaning is required there.
+The columns I'm interested in for this task are 'Business_Address', 'Business_Name', 'What_indicates_the_storefront_is_available_vacant_', 'Is_the_storefront_boarded_up_with_plywood_', 'East_or_West_side_of_the_street_', 'Latitude', 'Longitude', 'Community_Board', 'Council_District', 'Borough', and 'Postcode'. The survey data is all from August 2020, and there are no date fields in the data. There are no numeric fields to perform calculations on, so no cleaning is required there.
 
 ```{python}
 # How many rows are in the table?
@@ -98,6 +100,7 @@ num_rows_result = num_rows_job.to_dataframe()
 # View results
 print(num_rows_result)
 ```
+![](Output_00004.png)
 
 Let's check for duplicate records.
 
@@ -121,6 +124,7 @@ dup_rows_result = dup_rows_job.to_dataframe()
 # View results
 print(dup_rows_result)
 ```
+![](Output_00005.png)
 
 There are 8 duplicate rows. Let's remove them.
 
@@ -141,6 +145,7 @@ remove_dup_rows_result = remove_dup_rows_job.to_dataframe()
 # View results
 print(remove_dup_rows_result)
 ```
+![](Output_00006.png)
 
 Copy the results (without the 8 duplicates) to another table containing 377 entries rather than the original 385 rows.
 
@@ -179,6 +184,7 @@ print("Query results loaded to the table {}".format("all-in-one-platform.vacant_
 # Write dataframe to csv file for later use. This shows up in the ../output/kaggle/working folder.
 clean_table_result.to_csv('clean_table_result.csv', index=False)
 ```
+![](Output_00007.png)
 
 ```{python}
 # How many rows are in the cleaned table that contain null values in either 'Community_Board' or 'Postcode' columns?
@@ -198,6 +204,7 @@ null_rows_result = null_rows_job.to_dataframe()
 # View results
 print(null_rows_result)
 ```
+![](Output_00008.png)
 
 ```{python}
 # How many rows are in the cleaned table that contain null values in 'What_indicates_the_storefront_is_available_vacant_'' column?
@@ -217,6 +224,7 @@ null_indicates_result = null_indicates_job.to_dataframe()
 # View results
 print(null_indicates_result)
 ```
+![](Output_00009.png)
 
 There are 377 rows total with 7 rows (1.86%) that have null values in either the 'Community_Board' or 'Postcode' columns and zero null values in the 'What_indicates_the_storefront_is_available_vacant_' column. This is acceptable for the specific business task to leave them as nulls.
 
@@ -245,6 +253,7 @@ vacancies_result = vacancies_query_job.to_dataframe()
 # View results
 print(vacancies_result)
 ```
+![](Output_00010.png)
 
 We can see zip codes 10025, 10024, 10031, 10012, and 10023 in community boards 107, 109, and 102 have the highest incidents of vacancies.
 
