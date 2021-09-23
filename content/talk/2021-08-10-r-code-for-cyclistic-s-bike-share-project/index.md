@@ -444,7 +444,7 @@ write.csv(all_trips_v3,'/Users/caroladdassi/RProjects/Case_Study_Cyclistics/data
   coord_flip() +
   theme(axis.text.y = element_text(size = 6))
 
-### Visualization of the most popular start stations to begin rides (over 10,000 rides/year), unknown stations ommitted.
+### Visualization of the most popular start stations to begin rides (over 10,000 rides/year), unknown stations omitted.
 - all_trips_v3 %>% 
    na_if("") %>% na.omit %>% 
   group_by(usertype, from_station_name) %>% 
