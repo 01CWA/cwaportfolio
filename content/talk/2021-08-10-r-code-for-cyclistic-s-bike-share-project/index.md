@@ -44,7 +44,7 @@ m11_05_2021 <- read.xlsx("D2021_05_e.xlsx")
 m12_06_2021 <- read.xlsx("D2021_06_e.xlsx")
 
 #====================================================
-### Step2: Wrangle Data and Combine Into a Single File
+### Step 2: Wrangle Data and Combine Into a Single File
 #====================================================
 ### Compare column names each of the files
 ### While the names don't have to be in the same order, they DO need to match perfectly before we can use a command to join them into one file
