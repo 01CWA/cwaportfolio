@@ -290,4 +290,4 @@ Steps to load this notebook into my R project:
 
 For my requirements for this exercise, I copied the contents into a .md file for a project post for my website.
 
-Thank you for viewing this exercise. Suggestions and comments are welcome for streamlining this workflow. 
+Suggestions and comments are welcome for streamlining this workflow. Thank you for viewing this exercise. 
