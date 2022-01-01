@@ -10,8 +10,8 @@ link_list_label: "Appreciating" # bookmarks, elsewhere, etc.
 link_list:
 - name: The Thunder of Silence
   url: https://www.barnesandnoble.com/w/thunder-of-silence-joel-s-goldsmith/1000160266
-- name: Enya - Only Time
-  url: https://www.youtube.com/watch?v=7wfYIMyS_dI&list=PL6n_XTD5fjYGiBLOGVCCDPhnn-iGQOz8V&index=2
+- name: Maxwell - Everwanting, To Want You To Want
+  url: https://www.youtube.com/watch?v=eA6UGpO-Yz8
 - name: Ralph Gibson
   url: https://www.henipublishing.com/news/self-exposure-by-ralph-gibson
 ---
